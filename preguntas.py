@@ -63,13 +63,15 @@ def pregunta_02():
     decimal=".",  # separador de los decimales para números
     )
     # Imprima las dimensiones del DataFrame
-    print(df.size)
+    #print("Dimensiones")
+    arr = df.to_numpy()
+    print(arr.shape)
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
-    print(df.corr())
+    print((df['life'].corr(df['fertility'])))
 
     # Imprima la media de la columna `life` con 4 decimales.
-    print(df.mean())
+    print(df["life"].mean().round(4))
 
     # Imprima el tipo de dato de la columna `fertility`.
     print(df["fertility"].dtypes)
