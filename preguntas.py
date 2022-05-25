@@ -178,7 +178,7 @@ def pregunta_04():
     (X_train, X_test, y_train, y_test,) =train_test_split(
         X_fertility,
         y_life,
-        test_size=0.8,
+        test_size=0.2,
         random_state=53,
     )
 
