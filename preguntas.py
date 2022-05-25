@@ -67,18 +67,27 @@ def pregunta_02():
     arr = df.to_numpy()
     print(arr.shape)
 
+   
+
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
+    #print("correlacion")    
     print((df['life'].corr(df['fertility']).round(4)))
 
     # Imprima la media de la columna `life` con 4 decimales.
+    #print("media")
     print(df["life"].mean().round(4))
 
     # Imprima el tipo de dato de la columna `fertility`.
+    #print("Fertility")
+    s = pd.Series(data=df["fertility"])
+    tipoDato=s
+    #print(type(s))
     print(type(df["fertility"]))
     
 
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
-    print((df['GDP'].corr(df['life'])))
+
+    print((df['GDP'].corr(df['life']).round(3)))
 
 
 def pregunta_03():
