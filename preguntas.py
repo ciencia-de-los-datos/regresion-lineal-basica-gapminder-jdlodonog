@@ -74,7 +74,7 @@ def pregunta_02():
     print(df["life"].mean().round(4))
 
     # Imprima el tipo de dato de la columna `fertility`.
-    print(tupes(df["fertility"]))
+    print(type(df["fertility"]))
     
 
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
